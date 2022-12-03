@@ -4,7 +4,7 @@ class SplashScreen:
 
     def __init__(self):
         # Nome(s) do(s) criador(es)
-        self.created_by = "Howard Roatti"
+        self.created_by = "Daniel Marinho, Isaque Mattos, Alejandro, Mineiro"
         self.professor = "Prof. M.Sc. Howard Roatti"
         self.disciplina = "Banco de Dados"
         self.semestre = "2022/2"
