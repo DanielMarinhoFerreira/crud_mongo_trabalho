@@ -1,8 +1,7 @@
 import logging
 from conexion.mongo_queries import MongoQueries
-from conexion.oracle_queries import OracleQueries
 import json
-from data import carregar_dados
+import data
 
 LIST_OF_COLLECTIONS = ["servidor", "conta", "personagem"]
 logger = logging.getLogger(name="Example_CRUD_MongoDB")
@@ -42,8 +41,8 @@ def extract_and_insert():
 
     for collection in LIST_OF_COLLECTIONS:
         #records = json.loads(df.T.to_json()).values()
-        dados = carregar_dados(collection=collection)
-        records = json.loads(dados.to_json()).values()
+        dados = data.carregar_dados(collection=collection)
+        records = json.loads(dados).values()
         logger.warning("data converted to json")
         insert_many(data=records, collection=collection)
         logger.warning(f"documents generated at {collection} collection")

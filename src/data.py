@@ -1,6 +1,8 @@
+
+
 def carregar_dados(collection:str):
     if collection == "servidor":
-        dados = "{'id_servidor':'001','nome':'PEGASUS'}
+        dados = "{'id_servidor':'001','nome':'PEGASUS'}"
         "{'id_servidor':'002','nome':'THOR'}"
         "{'id_servidor':'003','nome':'FENIX'}"
     elif collection == "conta":

@@ -9,7 +9,7 @@ tela_inicial = SplashScreen()
 relatorio = Relatorio()
 ctrl_servidor = Controller_Servidor()
 ctrl_conta = Controller_Conta()
-ctrl_personagem = Controller_Personagemd()
+ctrl_personagem = Controller_Personagem()
 
 def reports(opcao_relatorio:int=0):
 
@@ -19,8 +19,6 @@ def reports(opcao_relatorio:int=0):
         relatorio.get_relatorio_conta()
     elif opcao_relatorio == 3:
         relatorio.get_relatorio_personagem()
-    elif opcao_relatorio == 4:
-        relatorio.get_relatorio_contas_por_servidor()
 
 
 def inserir(opcao_inserir:int=0):
